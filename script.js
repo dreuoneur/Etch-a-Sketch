@@ -6,5 +6,16 @@ let div = document.createElement("div")
 div.classList.add("mi-div")
 container.appendChild(div)
 }
+const buttons = document.querySelectorAll("div");
 
 
+buttons.forEach((button) => {
+
+  button.addEventListener("click", function(e) {
+   
+  if (e.target.style.backgroundColor === "lightcoral") {
+    e.target.style.backgroundColor = "blue";
+  } else {
+    e.target.style.backgroundColor = "lightcoral";
+  }
+})});
