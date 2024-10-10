@@ -13,9 +13,17 @@ buttons.forEach((button) => {
 
   button.addEventListener("click", function(e) {
    
-  if (e.target.style.backgroundColor === "lightcoral") {
-    e.target.style.backgroundColor = "blue";
-  } else {
+   
+  if (e.target.style.backgroundColor === "blue") {
     e.target.style.backgroundColor = "lightcoral";
+  } else {
+    e.target.style.backgroundColor = "blue";
   }
-})});
+  e.stopPropagation(button);
+
+}
+
+)
+}
+);
+
