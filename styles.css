@@ -12,13 +12,17 @@ body {
     display: flex;
     width: 30px;
     height: 30px;
-    background-color: lightcoral; 
-    
-    
+    background-color: lightgoldenrodyellow;  
 }
+ .mi-div2 { 
+    display: grid;
+    border: 0.1px solid rgb(20, 182, 211);
+    background-color: lightgoldenrodyellow;
+    
+ }
 #container {
-    justify-content: center;
-    margin-left: 60px;
+    
+    margin-left: 400px;
     margin-right: 30px;
    
     height: 511px;
@@ -26,7 +30,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    grid-template-columns: repeat(16, 1fr); /* Ajusta según tu necesidad */
+    grid-template-columns: repeat(16, 1fr); 
   grid-template-rows: repeat(16, 1fr);
     
     
